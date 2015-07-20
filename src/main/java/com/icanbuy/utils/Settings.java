@@ -13,4 +13,7 @@ public class Settings {
      * same as {@link #CURRENT_SERVER} but with out http:// (https://)
      */
     public static final String CURRENT_SERVER_SHORT = CURRENT_SERVER.replaceAll("https?://", "");
+
+    //Serenity session keys
+    public static final String API_RESPONSE_XML = "xmlResponse";
 }

@@ -10,6 +10,8 @@ import net.thucydides.core.annotations.Story;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.io.IOException;
+
 /**
  * <p>Goal. Check structure of xml from response.</p>
  * <p>Assumption. In this case i hope that default request (no parameters) will always return
@@ -31,8 +33,8 @@ public class TestMandatoryXmlStructure {
     public SearchResponseSteps xmlService;
 
     @Test
-    public void searchApiRequestShouldReturnCorrectXMLInResponseToDefaultRequest() {
-        apiService.storeResponseFor(Settings.CURRENT_SERVER + "/api/search/");
+    public void searchApiRequestShouldReturnCorrectXMLInResponseToDefaultRequest() throws IOException {
+        apiService.storeXMLResponseFor(Settings.CURRENT_SERVER + "/api/search/");
         xmlService.storedDefaultResponseShouldMatchExpectedRegexp();
     }
 }
