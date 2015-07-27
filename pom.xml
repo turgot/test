@@ -12,10 +12,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <serenity.version>1.0.59</serenity.version>
-        <slf4j-simple.version>1.7.10</slf4j-simple.version>
+        <serenity.version>1.1.1</serenity.version>
+        <slf4j-simple.version>1.7.12</slf4j-simple.version>
         <junit.version>4.12</junit.version>
-        <assertj.version>2.0.0</assertj.version>
+        <assertj.version>3.1.0</assertj.version>
         <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
