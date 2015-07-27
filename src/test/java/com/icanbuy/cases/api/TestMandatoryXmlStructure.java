@@ -35,6 +35,6 @@ public class TestMandatoryXmlStructure {
     @Test
     public void searchApiRequestShouldReturnCorrectXMLInResponseToDefaultRequest() throws IOException {
         apiService.storeXMLResponseFor(Settings.CURRENT_SERVER + "/api/search/");
-        xmlService.storedDefaultResponseShouldMatchExpectedRegexp();
+        xmlService.storedDefaultResponseXMLShouldMatchExpectedRegexp();
     }
 }
