@@ -59,7 +59,7 @@ public class HTTPServiceSteps extends ScenarioSteps {
      * @throws  IOException  in case of a problem or the connection was aborted
      */
     @Step
-    private HttpResponse fetch(String uri) throws IOException {
+    public HttpResponse fetch(String uri) throws IOException {
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet getRequest = new HttpGet(uri);
         return client.execute(getRequest);
